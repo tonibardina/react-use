@@ -45,6 +45,7 @@ const useLocalStorage = <T>(
       // If user is in private mode or has storage restriction
       // localStorage can throw. JSON.parse and JSON.stringify
       // can throw, too.
+      console.log(error)
       return initialValue;
     }
   });
